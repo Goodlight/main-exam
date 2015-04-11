@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "code-light";
+  src: url(../fonts/CODE_Light.eot);
+  src: url(../fonts/CODE_Light.ttf);
+  src: url(../fonts/CODE_Light.woff);
+  src: url(../fonts/code_light-webfont.woff2);
+}
+
+@font-face {
+  font-family: "centery-gothic";
+  src: url(../fonts/Century_Gothic.ttf);
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.container{
+	width: 1633px !important;
+	margin: 0 auto;
+}
+.wrapper{
+	margin: 0 auto;
+	background-color: #f6f6f6;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.logo img{
+	margin: 22px 0px 0px 137px;
+}
+.nav{
+	margin-top: 45px;
+	margin-right: 110px;
+	float: right;
+	
+}
+.nav-pills > li + li {
+    margin-left: 60px;
+}
+.nav li a{
+	font-family: "centery-gothic";
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 25px 10px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	background-color: #ffea00;
+	color: #000;
+}
+/*-------------------------------------top_img----------------------------------*/
+.top-img{
+	margin: 25px 0px 40px 0px;
+	clear: both;
+	height: 150px;
+	background-image: url(../images/head-pic.jpg);
+	background-repeat: no-repeat;
+}
+.page-name{
+	margin: 32px 0px 0px 130px;
+	display: block;
+	background-color: #424146;
+	padding: 20px;
+	width: 320px;
+	font-size: 35px;
+	color: #ffea00;
+	text-transform: uppercase;
+	font-family: "centery-gothic";
+}
+
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.list{
+	overflow:hidden;
+	width:100%;
+}
+.list .item{
+	width: 47.303%;
+	float: left;
+	margin: 0 1.015% 1.775em;
+	padding:1em;
+	border:1px solid white;
+	border-radius:8px;
+}
+.list .item img{
+	max-width:100%;
+	max-height:100%;
+	display:block;
+}
+.list .item p{
+	margin-top:1em;
+	text-align: left;
+}
+.post-prev{
+	padding: 25px;
+	background-color: #ffea00;
+	background-image: url(../images/row.png);
+	background-repeat: no-repeat;
+	background-position: 90px -10px;
+	
+}
+.post-prev h2 a{
+	font-size: 23px;
+	text-transform: uppercase;
+	font-family: "centery-gothic";
+	text-decoration: none;
+}
+.post-prev p{
+	font-size: 14px;
+	font-family: "centery-gothic";
+	margin-bottom: 20px;
+}
+.quote{
+	background-color: #ffea00;
+}
+.quote p{
+	font-size: 14px;
+	font-family: "centery-gothic";
+	margin-bottom: 20px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar ul li{
+	margin-top: 5px;
+}
+.sidebar ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: "centery-gothic";
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.sidebar ul li a i{
+	padding: 5px;
+	margin-right: 5px;
+	background-color: #ffea00;
+}
+.serch{
+	background-color: #424147;
+	padding: 20px 45px;
+	margin-bottom: 30px;
+}
+
+.categori{
+	background-color: #424147;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+}
+.categori ul{
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	
+}
+.categori, .archive, .popular-posts h3{
+	color: #ffea00;
+}
+.categori, .archive, .popular-posts{
+	padding: 25px;
+}
+.archive{
+	clear: both;
+	margin-bottom: 30px;
+	background-color: #424147;
+	overflow: hidden;
+}
+.archive ul{
+	float: left;
+	margin-right: 30px;
+	margin-top: 20px;	
+}
+.popular-posts{
+	background-color: #424147;
+}
+.popular-posts img{
+	display: inline-block;
+	width: 100px;
+	height: 70px;
+}
+.popular-posts h4{
+	display: inline-block;
+	float: left;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
